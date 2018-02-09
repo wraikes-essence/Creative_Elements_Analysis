@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Relevance <= 2.5\ngini = 0.472\nsamples = 1115\nvalue = [689, 426]\nclass = Not_Consider", fillcolor="#e5813961"] ;
+1 [label="Enjoyment <= 2.5\ngini = 0.37\nsamples = 662\nvalue = [500, 162]\nclass = Not_Consider", fillcolor="#e58139ac"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Enjoyment <= 1.5\ngini = 0.282\nsamples = 441\nvalue = [366, 75]\nclass = Not_Consider", fillcolor="#e58139cb"] ;
+1 -> 2 ;
+3 [label="gini = 0.173\nsamples = 136\nvalue = [123, 13]\nclass = Not_Consider", fillcolor="#e58139e4"] ;
+2 -> 3 ;
+4 [label="gini = 0.324\nsamples = 305\nvalue = [243, 62]\nclass = Not_Consider", fillcolor="#e58139be"] ;
+2 -> 4 ;
+5 [label="Distinctiveness <= 1.5\ngini = 0.477\nsamples = 221\nvalue = [134, 87]\nclass = Not_Consider", fillcolor="#e5813959"] ;
+1 -> 5 ;
+6 [label="gini = 0.32\nsamples = 40\nvalue = [32, 8]\nclass = Not_Consider", fillcolor="#e58139bf"] ;
+5 -> 6 ;
+7 [label="gini = 0.492\nsamples = 181\nvalue = [102, 79]\nclass = Not_Consider", fillcolor="#e581393a"] ;
+5 -> 7 ;
+8 [label="Brand_Appeal <= 2.5\ngini = 0.486\nsamples = 453\nvalue = [189, 264]\nclass = Consider", fillcolor="#399de548"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Branding <= 2.5\ngini = 0.475\nsamples = 36\nvalue = [22, 14]\nclass = Not_Consider", fillcolor="#e581395d"] ;
+8 -> 9 ;
+10 [label="gini = 0.165\nsamples = 11\nvalue = [10, 1]\nclass = Not_Consider", fillcolor="#e58139e6"] ;
+9 -> 10 ;
+11 [label="gini = 0.499\nsamples = 25\nvalue = [12, 13]\nclass = Consider", fillcolor="#399de514"] ;
+9 -> 11 ;
+12 [label="Distinctiveness <= 2.5\ngini = 0.48\nsamples = 417\nvalue = [167, 250]\nclass = Consider", fillcolor="#399de555"] ;
+8 -> 12 ;
+13 [label="gini = 0.43\nsamples = 150\nvalue = [47, 103]\nclass = Consider", fillcolor="#399de58b"] ;
+12 -> 13 ;
+14 [label="gini = 0.495\nsamples = 267\nvalue = [120, 147]\nclass = Consider", fillcolor="#399de52f"] ;
+12 -> 14 ;
+}

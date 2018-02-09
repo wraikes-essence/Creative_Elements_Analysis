@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Enjoyment <= 2.5\ngini = 0.492\nsamples = 10893\nvalue = [6124, 4769]\nclass = Not_Consider", fillcolor="#e5813938"] ;
+1 [label="Brand_Appeal <= 2.5\ngini = 0.411\nsamples = 4713\nvalue = [3348, 1365]\nclass = Not_Consider", fillcolor="#e5813997"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Branding <= 2.5\ngini = 0.361\nsamples = 2918\nvalue = [2228, 690]\nclass = Not_Consider", fillcolor="#e58139b0"] ;
+1 -> 2 ;
+3 [label="gini = 0.324\nsamples = 1946\nvalue = [1550, 396]\nclass = Not_Consider", fillcolor="#e58139be"] ;
+2 -> 3 ;
+4 [label="gini = 0.422\nsamples = 972\nvalue = [678, 294]\nclass = Not_Consider", fillcolor="#e5813990"] ;
+2 -> 4 ;
+5 [label="Relevance <= 2.5\ngini = 0.469\nsamples = 1795\nvalue = [1120, 675]\nclass = Not_Consider", fillcolor="#e5813965"] ;
+1 -> 5 ;
+6 [label="gini = 0.449\nsamples = 1280\nvalue = [845, 435]\nclass = Not_Consider", fillcolor="#e581397c"] ;
+5 -> 6 ;
+7 [label="gini = 0.498\nsamples = 515\nvalue = [275, 240]\nclass = Not_Consider", fillcolor="#e5813920"] ;
+5 -> 7 ;
+8 [label="Brand_Appeal <= 3.5\ngini = 0.495\nsamples = 6180\nvalue = [2776, 3404]\nclass = Consider", fillcolor="#399de52f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Branding <= 2.5\ngini = 0.498\nsamples = 3236\nvalue = [1731, 1505]\nclass = Not_Consider", fillcolor="#e5813921"] ;
+8 -> 9 ;
+10 [label="gini = 0.451\nsamples = 770\nvalue = [506, 264]\nclass = Not_Consider", fillcolor="#e581397a"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 2466\nvalue = [1225, 1241]\nclass = Consider", fillcolor="#399de503"] ;
+9 -> 11 ;
+12 [label="Relevance <= 2.5\ngini = 0.458\nsamples = 2944\nvalue = [1045, 1899]\nclass = Consider", fillcolor="#399de573"] ;
+8 -> 12 ;
+13 [label="gini = 0.496\nsamples = 518\nvalue = [235, 283]\nclass = Consider", fillcolor="#399de52b"] ;
+12 -> 13 ;
+14 [label="gini = 0.445\nsamples = 2426\nvalue = [810, 1616]\nclass = Consider", fillcolor="#399de57f"] ;
+12 -> 14 ;
+}

@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Enjoyment <= 2.5\ngini = 0.491\nsamples = 10867\nvalue = [6146, 4721]\nclass = Not_Purchase", fillcolor="#e581393b"] ;
+1 [label="Distinctiveness <= 1.5\ngini = 0.342\nsamples = 5087\nvalue = [3975, 1112]\nclass = Not_Purchase", fillcolor="#e58139b8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Interesting_0.0 <= 0.5\ngini = 0.273\nsamples = 2421\nvalue = [2027, 394]\nclass = Not_Purchase", fillcolor="#e58139cd"] ;
+1 -> 2 ;
+3 [label="gini = 0.296\nsamples = 1870\nvalue = [1532, 338]\nclass = Not_Purchase", fillcolor="#e58139c7"] ;
+2 -> 3 ;
+4 [label="gini = 0.183\nsamples = 551\nvalue = [495, 56]\nclass = Not_Purchase", fillcolor="#e58139e2"] ;
+2 -> 4 ;
+5 [label="Brand_Appeal <= 3.5\ngini = 0.394\nsamples = 2666\nvalue = [1948, 718]\nclass = Not_Purchase", fillcolor="#e58139a1"] ;
+1 -> 5 ;
+6 [label="gini = 0.376\nsamples = 2400\nvalue = [1798, 602]\nclass = Not_Purchase", fillcolor="#e58139aa"] ;
+5 -> 6 ;
+7 [label="gini = 0.492\nsamples = 266\nvalue = [150, 116]\nclass = Not_Purchase", fillcolor="#e581393a"] ;
+5 -> 7 ;
+8 [label="Enjoyment <= 3.5\ngini = 0.469\nsamples = 5780\nvalue = [2171, 3609]\nclass = Purchase", fillcolor="#399de566"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Distinctiveness <= 1.5\ngini = 0.499\nsamples = 3066\nvalue = [1587, 1479]\nclass = Not_Purchase", fillcolor="#e5813911"] ;
+8 -> 9 ;
+10 [label="gini = 0.429\nsamples = 524\nvalue = [361, 163]\nclass = Not_Purchase", fillcolor="#e581398c"] ;
+9 -> 10 ;
+11 [label="gini = 0.499\nsamples = 2542\nvalue = [1226, 1316]\nclass = Purchase", fillcolor="#399de511"] ;
+9 -> 11 ;
+12 [label="Distinctiveness <= 2.5\ngini = 0.338\nsamples = 2714\nvalue = [584, 2130]\nclass = Purchase", fillcolor="#399de5b9"] ;
+8 -> 12 ;
+13 [label="gini = 0.455\nsamples = 936\nvalue = [328, 608]\nclass = Purchase", fillcolor="#399de575"] ;
+12 -> 13 ;
+14 [label="gini = 0.247\nsamples = 1778\nvalue = [256, 1522]\nclass = Purchase", fillcolor="#399de5d4"] ;
+12 -> 14 ;
+}

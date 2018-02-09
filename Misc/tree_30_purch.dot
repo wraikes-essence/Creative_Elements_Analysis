@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Enjoyment <= 3.5\ngini = 0.488\nsamples = 10023\nvalue = [5789, 4234]\nclass = Not_Purchase", fillcolor="#e5813944"] ;
+1 [label="Enjoyment <= 2.5\ngini = 0.425\nsamples = 7344\nvalue = [5092, 2252]\nclass = Not_Purchase", fillcolor="#e581398e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Brand_Appeal <= 2.5\ngini = 0.324\nsamples = 4310\nvalue = [3434, 876]\nclass = Not_Purchase", fillcolor="#e58139be"] ;
+1 -> 2 ;
+3 [label="gini = 0.263\nsamples = 2708\nvalue = [2287, 421]\nclass = Not_Purchase", fillcolor="#e58139d0"] ;
+2 -> 3 ;
+4 [label="gini = 0.407\nsamples = 1602\nvalue = [1147, 455]\nclass = Not_Purchase", fillcolor="#e581399a"] ;
+2 -> 4 ;
+5 [label="Relevance <= 1.5\ngini = 0.496\nsamples = 3034\nvalue = [1658, 1376]\nclass = Not_Purchase", fillcolor="#e581392b"] ;
+1 -> 5 ;
+6 [label="gini = 0.302\nsamples = 318\nvalue = [259, 59]\nclass = Not_Purchase", fillcolor="#e58139c5"] ;
+5 -> 6 ;
+7 [label="gini = 0.5\nsamples = 2716\nvalue = [1399, 1317]\nclass = Not_Purchase", fillcolor="#e581390f"] ;
+5 -> 7 ;
+8 [label="Relevance <= 2.5\ngini = 0.385\nsamples = 2679\nvalue = [697, 1982]\nclass = Purchase", fillcolor="#399de5a5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Brand_Appeal <= 2.5\ngini = 0.498\nsamples = 561\nvalue = [264, 297]\nclass = Purchase", fillcolor="#399de51c"] ;
+8 -> 9 ;
+10 [label="gini = 0.366\nsamples = 58\nvalue = [44, 14]\nclass = Not_Purchase", fillcolor="#e58139ae"] ;
+9 -> 10 ;
+11 [label="gini = 0.492\nsamples = 503\nvalue = [220, 283]\nclass = Purchase", fillcolor="#399de539"] ;
+9 -> 11 ;
+12 [label="Distinctiveness <= 2.5\ngini = 0.325\nsamples = 2118\nvalue = [433, 1685]\nclass = Purchase", fillcolor="#399de5bd"] ;
+8 -> 12 ;
+13 [label="gini = 0.428\nsamples = 619\nvalue = [192, 427]\nclass = Purchase", fillcolor="#399de58c"] ;
+12 -> 13 ;
+14 [label="gini = 0.27\nsamples = 1499\nvalue = [241, 1258]\nclass = Purchase", fillcolor="#399de5ce"] ;
+12 -> 14 ;
+}
